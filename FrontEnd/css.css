@@ -27,7 +27,7 @@ color: white;
 text-align: center;
 padding-top: 150px;
 /* Fondo con imagen */
-background-image: url('image.jpg'); /* tu imagen */
+background-image: url('sede.jpg'); /* tu imagen */
 background-size: cover; /* ajusta al contenedor */
 background-repeat: no-repeat; /* evita repetición */
 background-position: center; /* centra la imagen */
