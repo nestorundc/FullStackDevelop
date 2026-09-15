@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica de JavaScript y DOM</title>
+    <link rel="stylesheet" href="javascript.css">
+</head>
+<body>
+    <h1 id="titulo">Hola</h1>
+        <button id="btnCambiar">Cambiar texto</button>
+    <script>
+        const titulo = document.getElementById("titulo");
+        const boton = document.getElementById("btnCambiar");
+        boton.addEventListener("click", () => {
+        titulo.textContent = "Texto cambiado con JavaScript";
+        titulo.style.color = "green";
+    });
+    </script>
+<ul id="lista"></ul>
+<button id="btnAgregar">Agregar elemento</button>
+    <script>
+        const lista = document.getElementById("lista");
+        const boton2 = document.getElementById("btnAgregar");
+        boton2.addEventListener("click", () => {
+        const li = document.createElement("li"); // crea un nuevo <li>
+        li.textContent = "JavaScript"; // agrega texto al <li>
+        lista.appendChild(li); // inserta el <li> dentro del <ul>
+        });
+    </script>
+<button id="btn">Haz clic aquí</button>
+    <script>
+        const boton3 = document.getElementById("btn");
+        boton3.addEventListener("click", () => {
+        console.log("Se hizo clic");
+        alert("¡Botón presionado!");
+        });
+    </script>
+<h1>Presiona una tecla</h1>
+    <p id="resultado"></p>
+    <script>
+        const resultado = document.getElementById("resultado");
+        document.addEventListener("keydown", (evento) => {
+        console.log("Tecla:", evento.key); // se ve en consola
+        console.log("Tecla presionada!"); // Cambiar por alert el console.log
+        resultado.textContent = "Presionaste: " + evento.key; // se ve en la página
+        });
+    </script>
+<form id="formulario">
+        <label>
+            Nombres:
+            <input id="nombre" type="text" placeholder="Ej. Nestor Alberto" required />
+        </label>
+
+        <label>
+            Apellidos:
+            <input id="apellidos" type="text" placeholder="Ej. Villalba Luyo" required />
+        </label>
+
+        <label>
+            DNI / Documento de Identidad:
+            <input id="dni" type="text" maxlength="8" pattern="[0-9]{8}" placeholder="8 dígitos numericos" required />
+        </label>
+
+        <label>
+            Código de Estudiante:
+            <input id="codigo" type="text" placeholder="Ej. 2511020365" required />
+        </label>
+
+        <label>
+            Correo Institucional:
+            <input id="correo" type="email" placeholder="estudiante@institucion.edu.pe" required />
+        </label>
+
+        <label>
+            Número de Teléfono:
+            <input id="telefono" type="tel" maxlength="9" pattern="[0-9]{9}" placeholder="Ej. 987654321" required />
+        </label>
+
+        <label>
+            Dirección:
+            <input id="direccion" type="text" placeholder="Ej. Av. Dos de Mayo" required />
+        </label>
+<button type="submit">Guardar Datos</button>
+    </form>
+
+        <script>
+            const datosEstudiante = {
+                nombre: document.getElementById("nombre").value,
+                apellidos: document.getElementById("apellidos").value,
+                dni: document.getElementById("dni").value,
+                codigo: document.getElementById("codigo").value,
+                correo: document.getElementById("correo").value,
+                telefono: document.getElementById("telefono").value,
+                direccion: document.getElementById("direccion").value
+            };
+            formulario.addEventListener("submit", (evento) => {
+            evento.preventDefault(); // evita que la página se recargue
+            const nombre = document.getElementById("nombre").value; // obtiene el valor del input
+            alert("Dato guardado!");
+            console.log("Nombre:", nombre); // muestra el dato en consola
+            });
+        </script>    
+</body>
+</html>
