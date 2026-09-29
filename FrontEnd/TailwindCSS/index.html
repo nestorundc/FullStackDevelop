@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>EPIS UNDC | Ingeniería de Sistemas</title>
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between font-sans selection:bg-emerald-500 selection:text-black">
+
+    <!-- NAVBAR TIPO POPUP -->
+    <header class="sticky top-4 z-50 px-4">
+        <nav class="max-w-5xl mx-auto bg-zinc-900/80 backdrop-blur-md border border-zinc-800/80 rounded-2xl px-6 py-3.5 shadow-2xl flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="w-3 h-3 rounded-full bg-emerald-400 animate-pulse"></span>
+                <span class="font-extrabold text-lg tracking-wider text-white">EPIS <span class="text-emerald-400 font-mono text-xs ml-1">Sistemas</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-emerald-400 transition">Inicio</a>
+                <a href="administrativo.html" class="text-zinc-400 hover:text-white transition">Gestión EPIS</a>
+                <a href="docente.html" class="text-zinc-400 hover:text-white transition">Cátedra</a>
+            </div>
+
+            <div class="flex items-center space-x-3 text-xs border-l border-zinc-800 pl-4">
+                <a href="../HTML5.html" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition font-medium">HTML5</a>
+                <a href="FrontEnd/asincrono.html" class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition font-medium">JS Fetch</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow space-y-16 w-full">
+
+        <!-- HEADER INSTITUCIONAL -->
+        <section class="text-center space-y-4 max-w-3xl mx-auto pt-4">
+            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 rounded-full uppercase">
+                Universidad Nacional de Cañete
+            </span>
+            <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500 tracking-tight leading-tight uppercase">
+                Escuela Profesional de Ingeniería de Sistemas
+            </h1>
+            <p class="text-sm md:text-base text-zinc-400 max-w-xl mx-auto">
+                Portal institucional de la EPIS. Explora los servicios académicos, plana docente e instalaciones de nuestra carrera.
+            </p>
+        </section>
+
+        <!-- SECCIÓN DE TARJETAS (INICIO: DOCENTES, SEDE Y GESTIÓN) -->
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- TARJETA 1: DOCENTE -->
+            <article class="group bg-zinc-900/40 border border-zinc-800/80 hover:border-emerald-500/50 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1.5 shadow-lg flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl relative">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
+                             src="../plana docente.jpg" alt="Plana Catedrática">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-xs text-zinc-300 px-2.5 py-1 rounded-md border border-zinc-800">
+                            Cuerpo Académico
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                            Plana Docente
+                        </h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed text-justify">
+                            Conoce a los catedráticos e ingenieros especialistas encargados de impartir las materias de la carrera en la EPIS.
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <a href="docente.html" class="inline-block w-full text-center py-2 px-4 rounded-xl bg-zinc-800 hover:bg-emerald-500 hover:text-black text-xs font-semibold transition-all duration-300">
+                        Ver Cátedra &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <!-- TARJETA 2: SEDE / CAMPUS -->
+            <article class="group bg-zinc-900/40 border border-zinc-800/80 hover:border-emerald-500/50 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1.5 shadow-lg flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl relative">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
+                             src="../sede2.jpg" alt="Sede Universitaria">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-xs text-emerald-400 px-2.5 py-1 rounded-md border border-emerald-900/50">
+                            Infraestructura TI
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                            Sede & Laboratorios
+                        </h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed text-justify">
+                            Infraestructura moderna, laboratorios de cómputo y ambientes equipados para las prácticas de nuestra facultad.
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <a href="../sede2.jpg" target="_blank" class="inline-block w-full text-center py-2 px-4 rounded-xl bg-zinc-800 hover:bg-emerald-500 hover:text-black text-xs font-semibold transition-all duration-300">
+                        Ver Sede &rarr;
+                    </a>
+                </div>
+            </article>
+
+            <!-- TARJETA 3: GESTIÓN ADMINISTRATIVA -->
+            <article class="group bg-zinc-900/40 border border-zinc-800/80 hover:border-emerald-500/50 rounded-2xl p-4 transition-all duration-300 hover:-translate-y-1.5 shadow-lg flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl relative">
+                        <img class="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-500" 
+                             src="../foto3.jpeg" alt="Gestión Administrativa">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-xs text-zinc-300 px-2.5 py-1 rounded-md border border-zinc-800">
+                            Atención al Alumno
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <h3 class="text-lg font-bold text-white group-hover:text-emerald-400 transition-colors">
+                            Gestión Administrativa
+                        </h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed text-justify">
+                            Oficinas directivas, trámites de matrícula, soporte académico y servicios para la comunidad estudiantil.
+                        </p>
+                    </div>
+                </div>
+                <div class="pt-4">
+                    <a href="administrativo.html" class="inline-block w-full text-center py-2 px-4 rounded-xl bg-zinc-800 hover:bg-emerald-500 hover:text-black text-xs font-semibold transition-all duration-300">
+                        Ver Gestión EPIS &rarr;
+                    </a>
+                </div>
+            </article>
+
+        </section>
+
+        <!-- BLOQUE DE PERFIL INSTITUCIONAL DE LA CARRERA -->
+        <div class="relative overflow-hidden bg-gradient-to-br from-zinc-900 via-zinc-900/90 to-zinc-950 p-8 md:p-10 rounded-3xl border border-zinc-800 shadow-2xl max-w-4xl mx-auto">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
+            
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-6 text-center md:text-left">
+                <div class="p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-2xl text-emerald-400 shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                    </svg>
+                </div>
+                <div class="space-y-2">
+                    <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Perfil Profesional EPIS</span>
+                    <p class="text-xs md:text-sm text-zinc-300 italic leading-relaxed">
+                        "Formar Ingenieros de Sistemas analíticos, éticos e innovadores, capaces de diseñar, implementar y gestionar soluciones tecnológicas complejas, optimizando procesos organizacionales y promoviendo el desarrollo científico-tecnológico en la región Cañete y el país."
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-6 text-center text-xs text-zinc-500">
+        <p>&copy; 2026 <span class="text-zinc-300 font-medium">Néstor Alberto Villalba Luyo</span> — Escuela Profesional de Ingeniería de Sistemas (UNDC)</p>
+    </footer>
+
+</body>
+
+</html>

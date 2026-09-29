@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>EPIS UNDC | Plana Catedrática y Dirección</title>
+</head>
+
+<body class="bg-zinc-950 text-zinc-100 min-h-screen flex flex-col justify-between font-sans selection:bg-emerald-500 selection:text-black">
+
+    <header class="sticky top-4 z-50 px-4">
+        <nav class="max-w-5xl mx-auto bg-zinc-900/80 backdrop-blur-md border border-zinc-800/80 rounded-2xl px-6 py-3.5 shadow-2xl flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <span class="w-3 h-3 rounded-full bg-emerald-400"></span>
+                <span class="font-extrabold text-lg tracking-wider text-white">EPIS <span class="text-emerald-400 font-mono text-xs ml-1">Sistemas</span></span>
+            </div>
+            
+            <div class="hidden md:flex space-x-6 text-sm font-medium">
+                <a href="index.html" class="text-zinc-400 hover:text-white transition">Inicio</a>
+                <a href="administrativo.html" class="text-zinc-400 hover:text-white transition">Gestión EPIS</a>
+                <a href="docente.html" class="text-emerald-400 transition">Cátedra</a>
+            </div>
+
+            <div class="flex items-center space-x-3 text-xs border-l border-zinc-800 pl-4">
+                <a href="../HTML5.html" class="px-3 py-1.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 text-zinc-200 transition font-medium">HTML5</a>
+                <a href="../asincrono.html" class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 hover:bg-emerald-500/20 transition font-medium">JS Fetch</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 py-12 flex-grow space-y-12 w-full">
+
+        <section class="text-center space-y-3 max-w-3xl mx-auto pt-4">
+            <span class="px-3 py-1 text-xs font-semibold tracking-widest text-emerald-400 bg-emerald-950/60 border border-emerald-800/50 rounded-full uppercase">
+                Cátedra EPIS
+            </span>
+            <h1 class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-gradient-to-r from-white via-zinc-200 to-zinc-500 tracking-tight">
+                DIRECCIÓN Y PLANA DOCENTE
+            </h1>
+            <p class="text-sm text-zinc-400 max-w-xl mx-auto">
+                Autoridades académicas y plana de ingenieros encargados de la formación profesional en Sistemas.
+            </p>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- DECANO DE LA FACULTAD -->
+            <article class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between space-y-4">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-zinc-800 relative">
+                        <img class="w-full h-48 object-cover" src="../decano.png" alt="Decano Facultad de Ingeniería">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-[10px] font-mono text-emerald-400 px-2 py-1 rounded border border-emerald-900/50">
+                            Facultad de Ingeniería
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider block">Decano de la Facultad</span>
+                        <h3 class="text-lg font-bold text-white">Dr. Carlos Alcides Almidón Ortiz</h3>
+                        <p class="text-xs text-zinc-400 font-mono bg-zinc-900 px-2.5 py-1.5 rounded-lg border border-zinc-800">
+                            RESOLUCIÓN RECTORAL Nº 006-2026-R-UNDC
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- DIRECTORA DE ESCUELA -->
+            <article class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between space-y-4">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-zinc-800 relative">
+                        <img class="w-full h-48 object-cover" src="../directora.png" alt="Directora de Escuela EPIS">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-[10px] font-mono text-emerald-400 px-2 py-1 rounded border border-emerald-900/50">
+                            Escuela de Sistemas
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider block">Directora (E) de la EPIS</span>
+                        <h3 class="text-lg font-bold text-white">Dra. Miriam Angoma Astucurí</h3>
+                        <p class="text-xs text-zinc-400 font-mono bg-zinc-900 px-2.5 py-1.5 rounded-lg border border-zinc-800">
+                            Resolución de Decanato N.° 001-2026-DFI/UNDC
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+            <!-- PLANA CATEDRÁTICA GENERAL -->
+            <article class="bg-zinc-900/40 border border-zinc-800/80 rounded-2xl p-5 hover:border-emerald-500/50 transition-all duration-300 flex flex-col justify-between space-y-4">
+                <div class="space-y-4">
+                    <div class="overflow-hidden rounded-xl border border-zinc-800 relative">
+                        <img class="w-full h-48 object-cover" src="../plana docente.jpg" alt="Cuerpo Docente EPIS">
+                        <span class="absolute top-3 left-3 bg-zinc-950/80 backdrop-blur-sm text-[10px] font-mono text-zinc-300 px-2 py-1 rounded border border-zinc-800">
+                            Cuerpo Catedrático
+                        </span>
+                    </div>
+                    <div class="space-y-2">
+                        <span class="text-xs font-mono text-emerald-400 uppercase tracking-wider block">Docentes Ordinarios y Contratados</span>
+                        <h3 class="text-lg font-bold text-white">Plana Docente EPIS</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed pt-1">
+                            Ingenieros y catedráticos encargados de dictar las materias de especialidad, laboratorios de cómputo y talleres de investigación.
+                        </p>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+
+    <footer class="border-t border-zinc-900 bg-zinc-950 py-6 text-center text-xs text-zinc-500">
+        <p>&copy; 2026 <span class="text-zinc-300 font-medium">Néstor Alberto Villalba Luyo</span> — EPIS UNDC</p>
+    </footer>
+
+</body>
+
+</html>
